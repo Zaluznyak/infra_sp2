@@ -131,4 +131,4 @@ SIMPLE_JWT = {
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'sent_emails')
-FROM_EMAIL = 'webmaster@yamdb.ru'
+FROM_EMAIL = 'webmasters@yamdb.ru'
