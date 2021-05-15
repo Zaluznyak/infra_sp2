@@ -62,8 +62,8 @@ class ReviewSerializer(serializers.ModelSerializer):
     def validate(self, data):
         title_id = self.context['view'].kwargs.get('title_id')
         author = self.context['request'].user
-        if (self.context['request'].method == 'POST'
-                and Review.objects.filter(title=title_id, author=author).exists()):
+        if (self.context['request'].method == 'POST' and
+           Review.objects.filter(title=title_id, author=author).exists()):
             raise serializers.ValidationError(
                 'You can review a title only once!'
                 'Consider partial update of your review.'
