@@ -16,7 +16,7 @@ git clone https://github.com/Zaluznyak/infra_sp2.git
 ```
 2. Сборка и запуск образа (находимся в корне проекта)
 ```bash
-- docker-compose up -d --build
+docker-compose up -d --build
 ```
 3. Создание миграций
 ```bash
